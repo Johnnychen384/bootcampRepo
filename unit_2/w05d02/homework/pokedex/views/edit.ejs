@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Edit This Pokemon
+        </title>
+        <%- include('./partials/head.ejs') %> 
+    </head>
+    <body style="width: 100vw; height: 100vh;" class="bg-dark">
+        <!-- NavBar -->
+        <%- include('./partials/nav.ejs') %> 
+
+        <!-- Main -->       
+        <main class="d-flex h-100 text-center text-bg-dark">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main class="px-3 mt-5">
+                    <h1>Change <%= poke.name %> </h1>
+                    <form class="form-signin w-50 mx-auto mt-5" method="POST" action="/edit/<%= poke._id %>?_method=PUT">
+                        <!-- https://images-workbench.99static.com/lDXI3EB287NwkH0AHBJ6sckzKZw=/http://s3.amazonaws.com/projects-files/56/5672/567261/e0ceaeff-4944-4a7a-b275-28009b651985.jpg -->
+                        <img class="mb-4 rounded" src="<%= poke.img %> " alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">Make The Edits</h1>
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <input type="text" name="name" value="<%= poke.name %> " class="w-50 mb-3">
+                            <input type="text" name="img" value="<%= poke.img %> " class="w-50 mb-3">
+                            <input type="text" name="type" value="<%= poke.type %> " class="w-50 mb-3">             
+                        </div>
+                        
+                        <input class="btn btn-lg btn-primary btn-block my-5" type="submit" name="submit" value="Save">
+                    </form>
+                </main>
+            </div>
+        </main>
+
+
+
+
+        <!-- footer -->
+        <%- include('./partials/footer.ejs') %> 
+    </body>
+</html>

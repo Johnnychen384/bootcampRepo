@@ -1,0 +1,26 @@
+
+
+body {
+  width: 100vw;
+  background-color: rgb(63, 153, 232);
+  padding: 2em 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.btn {
+  border-radius: .5em;
+  border: 1px solid black;
+  margin: 1em;
+  box-shadow: .2em .3em .6em black;
+}
+
+.card {
+  box-shadow: .2em .3em .7em black;
+  width: 13em;
+}

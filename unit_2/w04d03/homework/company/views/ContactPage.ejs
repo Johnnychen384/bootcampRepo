@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('./partials/head.ejs') %>
+</head>
+<body style="height: 100vh">
+
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-3" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <!-- each item in the navbar -->
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link mx-3" href="/" role="button">Home</a>
+
+              <a class="nav-link mx-3" href="/history" role="button">History</a>
+            
+              <a class="nav-link mx-3" href="/past-work" role="button">Past Work</a>
+            
+              <a class="nav-link mx-3" href="/staff" role="button">Staff</a>
+                      
+              <a class="nav-link mx-3 active" aria-current="page" href="/contact" role="button">Contact</a>
+            
+              <a class="nav-link mx-3" href="/links" role="button">Our Links</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="d-flex h-100 text-center text-bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3 mt-5">
+                <h1>J & T Construction</h1>
+                <form class="form-signin w-50 mx-auto mt-5" method="post" action="/contact">
+                    <img class="mb-4 rounded" src="https://images-workbench.99static.com/lDXI3EB287NwkH0AHBJ6sckzKZw=/http://s3.amazonaws.com/projects-files/56/5672/567261/e0ceaeff-4944-4a7a-b275-28009b651985.jpg" alt="" width="72" height="72">
+                    <h1 class="h3 mb-3 font-weight-normal">Contact Us</h1>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <textarea class="form-control my-5" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message."></textarea>               
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+                </form>
+            </main>
+        
+            <!-- footer -->
+            <%- include ('./partials/footer.ejs') %>
+        </div>
+    </main>
+</body>
+</html>

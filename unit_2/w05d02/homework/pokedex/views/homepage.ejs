@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pokedex
+        </title>
+        <%- include('./partials/head.ejs') %> 
+    </head>
+    <body style="width: 100vw" class="bg-dark">
+
+        <!-- NavBar -->
+        <%- include('./partials/nav.ejs') %> 
+
+        <!-- Search field -->
+        <!-- <form action="/" method="POST" class="d-flex justify-content-center my-3">
+            
+            <button type="submit" class="rounded mx-1">Search</button>
+        </form> -->
+        <div class="d-flex justify-content-center">
+            <input id="searchInput" type="text" name="findPokemon" placeholder="Search Pokemon...">
+        </div>
+        
+
+        <!-- Section that holds all pokemon cards -->
+        <main id="pokemonContainer" class="d-flex flex-wrap mx-5 justify-content-around">
+
+            <!-- loops through allPokemon array and creates a card for each pokemon object in array -->
+            <% for(let pokemon of allPokemon){ %> 
+                <% let name = pokemon.name.toLowerCase() %> 
+                <div class="card my-3 d-flex flex-column justify-content-center align-items-center <%= name %>" id='pokemonCard' style="width: 14em; height: 22em;">
+                    <form action="/<%= pokemon._id %>/delete?_method=DELETE" method="POST" class="d-flex w-100 justify-content-end">
+                        <input type="submit" name="delete" value="X" style="border: none; background-color: white;">
+                    </form>
+                    <div class='d-flex justify-content-center' style="height: 50%;">
+                        <img src="<%= pokemon.img %>" class="card-img-top mt-4" alt="..." style="width: 50%;">
+                    </div>
+
+                    <div class="card-body">
+                        <a href="/<%= pokemon._id %> " class="text-decoration-none text-dark">
+                            <div class="bg-secondary rounded text-center text-white">
+                                <p>#<%= pokemon.id %> </p>
+                            </div>
+                            <h5 class="card-title toBeHovered text-center" style="font-size: 1em;"><%= pokemon.name %> </h5>
+                        </a>
+                        <div class="d-flex flex-column align-items-center">
+                            <form action="/Favorites/<%= pokemon._id %>" method="POST">
+                                <input type="submit" name="add" value="Add To Favorite" style="border-radius: .6em; background-color: grey; color: white; font-size: .7em;">
+                            </form>
+
+                            <form action="/edit/<%= pokemon._id %>" method="GET">
+                                <input type="submit" name="edit" value="Edit Pokemon" style="border-radius: .6em; background-color: grey; color: white; font-size: .7em; padding: 0 1em;">
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            <% } %> 
+        </main>
+        
+        <!-- footer -->
+        <%- include('./partials/footer.ejs') %> 
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+   
+<body style="width: 100vw; background-color: <%= sum < 0 ? "red" : "blue" %>">
+    
+    <h1>Budgtr</h1>
+    <form action="/new" method="get">
+        <input type="submit" name="makeNew" value="Make New Item">
+    </form>
+    <h1>In Bank: $<%= sum %> </h1>
+    <table>
+        <% for(let item of items){%>
+            <tr>
+                <td><%= item.date %> </td>
+                <td>
+                    <a href="/show/<%= item.id %> " style="color: black;"><%= item.name %> </a>
+                </td>
+                <td>$ <%= item.amount %> </td>
+                <td>
+                    <form action="/<%= item.id %>?_method=DELETE" method="POST">
+                        <input type="submit" name="delete" value="Delete">
+                    </form>
+                </td>
+                <td>
+                    <a href="/<%= item.id %>/edits " style="color: black;">Edit</a>
+                </td>
+                
+            </tr>
+            <th><hr/></th>
+        <% } %>
+    </table>
+    
+</body>
+</html>

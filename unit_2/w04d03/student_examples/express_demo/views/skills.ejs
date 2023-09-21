@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/CSS/app.css">    
+    </head>
+    <body>
+        <% if(mySkills.length < 2){ %>
+            <h1>My Skill</h1>
+        <% } else {%>
+            <h1>My Skills</h1>
+        <% } %>
+        <ul>
+            <% for(let i = 0; i < mySkills.length; i++){ %>
+
+            
+            <li><%=mySkills[i]%> </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
+
+
+<!-- module.exports =  -->

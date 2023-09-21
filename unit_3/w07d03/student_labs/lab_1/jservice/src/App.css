@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(4, 4, 16);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+* {
+  color: white;
+}
+
+
+button {
+  color: black;
+  border-radius: .3em;
+  border: 1px solid black;
+  margin-right: .4em;
+  padding: .4em;
+}
+
+.reveal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revealbtn{
+  padding: 1em;
+  margin: 1em auto;
+  background-color: aqua;
+  
+}
+
+h2, h3, h4 {
+  color: gold;
+}
+
+.btn-1 {
+  background-color: brown;
+}
+
+.btn-2 {
+  background-color: orchid;
+}
+
+hr {
+  margin-bottom: 5em;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('./partials/head.ejs') %>
+</head>
+<body style="height: 100vh">
+
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-3" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <!-- each item in the navbar -->
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link mx-3"  href="/" role="button">Home</a>
+
+              <a class="nav-link mx-3 active" aria-current="page" href="/history" role="button">History</a>
+              
+              <a class="nav-link mx-3" href="/past-work" role="button">Past Work</a>
+              
+              <a class="nav-link mx-3" href="/staff" role="button">Staff</a>          
+              
+              <a class="nav-link mx-3" href="/contact" role="button">Contact</a>
+              
+              <a class="nav-link mx-3" href="/links" role="button">Our Links</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="d-flex h-100 text-center text-bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3 mt-5">
+              <h1>History</h1>
+              <p class="lead mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis iure aliquam dolore culpa delectus eligendi molestiae maiores perferendis iusto ipsa recusandae modi atque, aspernatur expedita itaque vero pariatur alias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur exercitationem unde sed itaque, corrupti consequatur quasi quisquam facilis, culpa ullam, labore placeat debitis quibusdam a quis et impedit sunt dignissimos.</p>
+            </main>
+        
+            <!-- footer -->
+            <%- include ('./partials/footer.ejs') %>
+        </div>
+    </main>
+</body>
+</html>

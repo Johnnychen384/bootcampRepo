@@ -1,0 +1,63 @@
+// const printGreeting = name => {
+//     return `Hello there, ${name}!`
+// }
+
+// console.log(printGreeting("Slimer"));
+
+
+// const reverseWordOrder = (str) => {
+//     const arr = str.split(' ').reverse().join(' ')
+
+//     return arr
+// }
+
+// console.log(reverseWordOrder("Ishmael me Call"));
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+
+
+// const calculate = (num1, num2, operation) => {
+//     if(operation === "add") return num1 + num2
+//     if(operation === "sub") return num1 - num2
+//     if(operation === "mult") return num1 * num2
+//     if(operation === "div") return num1 / num2
+//     if(operation === "exp") return Math.pow(num1, num2)
+// }
+
+// console.log(calculate(4, 3, "sub"));
+// console.log(calculate(4, 3, "exp"));
+
+// const printConsecutives = (arr) => {
+//     let threePairsArr = [arr[0]]
+//     for(let i = 1; i <= arr.length; i++){
+//         if(arr[i - 1] + 1 === arr[i]) {
+//             if(threePairsArr.length === 3){
+//                 console.log(threePairsArr)
+
+//                 if(arr[i] !== null){
+//                     threePairsArr.shift()
+//                     threePairsArr.push(arr[i])
+//                 }
+                
+//             }
+//             else threePairsArr.push(arr[i])
+
+//         } else if(arr[i] === undefined && threePairsArr.length === 3){
+//             console.log(threePairsArr)
+//         }
+//         else {
+//             if(threePairsArr.length === 3) console.log(threePairsArr)
+//             threePairsArr = [arr[i]]
+//         }
+//     }
+
+    
+// }
+
+// printConsecutives([1, 2, 3, 9, 8, 0, 44, 45, 46, 2, 9]);
+// printConsecutives([0, 0, 0, -3, -2, -1, 0, 1, 2, 3]);
+
+// const letterReverse = (str) => {
+//     return arr = str.split(' ').reverse().join('')
+// }
+// console.log(letterReverse("Luke I am your father"));

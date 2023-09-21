@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <%- include ('./partials/head.ejs') %>
+    </head>
+    <body>
+
+        <!-- bootstrap for a pre-created page -->
+        <div class="container-fluid">
+            <div class="jumbotron mt-3 text-center mt-5">
+              <h1>Your message has been sent!</h1>
+
+              <!-- Allows the Go Back button to redirect us back to contact page -->
+              <form action="/contact" method="get">
+                <button class="btn btn-lg btn-primary mt-5">Go Back</button>
+              </form>
+            </div>
+          </div>
+    </body>
+</html>

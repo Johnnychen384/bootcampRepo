@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= item.name %> </h1>
+        <form action="/" method="get">
+            <input type="submit" name="back" value="BACK">
+        </form>
+        <li>
+            Date: <%= item.date %> 
+        </li>
+        <li>
+            name: <%= item.name %> 
+        </li>
+        <li>
+            from: <%= item.from %> 
+        </li>
+        <li>
+            amount: <%= item.amount %> 
+        </li>
+        <li>
+            tags: <%= item.tags %> 
+        </li>
+    </div>
+</body>
+</html>

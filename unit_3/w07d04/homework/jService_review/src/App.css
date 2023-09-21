@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.get-question{
+  background-color: rgb(124, 124, 245);
+  font-family:'Franklin Gothic Medium';
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+body{
+  text-align: center;
+  background-color: teal;
+  font-family:'Gamja Flower', cursive;
+  font-size: 25px;
+  color: antiquewhite;
+}
+h1{
+  
+  font-size: 50px;
+
+}
+
+.start{
+  height: 80px;
+  width: 150px;
+  font-size: 20px;
+  background-color: rgb(222, 171, 77);
+  border-radius: 10px;
+}
+
+.score1{
+
+  height: 50px;
+  width: 100px;
+
+  font-size: 20px;
+  background-color: rgb(222, 77, 94);
+  border-radius: 10px;
+  margin: 20px;
+}
+.score2{
+
+  height: 50px;
+  width: 100px;
+
+  font-size: 20px;
+  background-color: rgb(115, 199, 144);
+  border-radius: 10px;
+  margin: 20px;
+}
+.score3{
+
+  height: 50px;
+  width: 100px;
+
+  font-size: 20px;
+  background-color: rgb(199, 115, 184);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.score{
+  color:rgb(102, 3, 3);
+}

@@ -1,0 +1,62 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: #F8F7FF;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* why is this not working? */
+/* .container {
+    position: relative;
+    left: 0;
+} */
+
+.wereworld {
+    font-family: fantasy;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+   
+}
+
+.secret {
+    opacity: 0.5;
+}
+
+
+table {
+    margin: 0 auto;
+    border: 1px solid #333;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+th, td {
+    border: 1px solid #333;
+}
+
+.title {
+    background-color: #333;
+    color: white;
+}
+
+.cabbage {
+    color: chartreuse;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0.5em auto;
+}

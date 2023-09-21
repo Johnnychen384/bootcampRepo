@@ -1,0 +1,67 @@
+<<<<<<< HEAD
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #eeeeee;
+	height: 100vh;
+	width: 99vw;
+}
+
+.box {
+	background: gray;
+	margin: 1em auto;
+	width: 90%;
+	height: 10em;
+	text-align: center;
+}
+
+@media (min-width: 500px) {
+	body{
+		background: black;
+		color: white
+	}
+
+	.box {
+		width: 70%;
+		height: 50vh;
+		display: inline-block;
+		margin: 1em;
+	}
+
+	.box:first-of-type {
+		width: 95%;
+		margin: 1em;
+		height: 20vh;
+	}
+
+	.box:last-of-type {
+		width: 20%;
+		/* height: 25em; */
+	}
+
+}
+=======
+/* default style for mobile */
+body {
+	background: black;
+	color: white;
+	font-size: larger;
+   }
+   .box {
+	border: 3px solid green;
+	text-align: center;
+   }
+   
+   /* styles for desktop when the browser is 600px or above */
+   @media (min-width: 600px) {
+	body {
+	 background: thistle;
+	}
+	.box {
+		text-align: justify;
+	}
+   }
+   
+>>>>>>> a84ce811c3caa5eb0f0017d7eb95f39ec794d257

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Make Your Own Pokemon.
+        </title>
+        <%- include('./partials/head.ejs') %> 
+    </head>
+    <body style="width: 100vw;" class="bg-dark">
+        <!-- NavBar -->
+        <%- include('./partials/nav.ejs') %> 
+
+        <!-- Main -->       
+        <main class="d-flex h-100 text-center text-bg-dark">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main class="px-3 mt-5">
+                    <h1>Make Your Own Pokemon</h1>
+                    <form class="form-signin w-50 mx-auto mt-5" method="POST" action="/new/pokemon">
+                        <img class="mb-4 rounded" src="https://images-workbench.99static.com/lDXI3EB287NwkH0AHBJ6sckzKZw=/http://s3.amazonaws.com/projects-files/56/5672/567261/e0ceaeff-4944-4a7a-b275-28009b651985.jpg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">Add a pokemon</h1>
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <input type="text" name="id" placeholder="Pokemon ID" class="w-50 mb-3">
+                            <input type="text" name="name" placeholder="Pokemon Name" class="w-50 mb-3">
+                            <input type="text" name="img" placeholder="Image Link (Not Required)" class="w-50 mb-3">
+                            <input type="text" name="type" placeholder="Pokemon Type" class="w-50 mb-3">             
+                        </div>
+                        
+                        <input class="btn btn-lg btn-primary btn-block my-5" type="submit" name="submit" value="Create">
+                    </form>
+                </main>
+            </div> 
+        </main>
+
+
+
+        <!-- footer -->
+        <%- include('./partials/footer.ejs') %> 
+    </body>
+</html>

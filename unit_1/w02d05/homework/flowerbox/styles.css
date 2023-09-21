@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+
+
+/* ---------------------Nav ------------------------ */
+nav {
+    background-color: #92b2ba;
+    color: white;
+    height: 2.7em;
+}
+
+nav ul {
+    padding: .6em .4em 0 .4em;
+    margin: 0 .4em;
+}
+
+nav ul li {
+    font-size: small;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.headImg{
+    display: flex;
+    position: relative;
+}
+
+.headImg img {
+    width: 100%;
+}
+
+.headImg h1 {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    color: #92b2ba;
+    text-shadow: 4px 2px white;
+    font-size: 2.5rem;
+}
+
+.headImg div {
+    position: absolute;
+    background: white;
+    font-size: small;
+    padding: .5em .3em;
+    right: 0;
+    top: 77%;
+    color: #f0a8bb;
+}
+
+
+/* ------------Each Picture-------------------- */
+
+#mainContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+
+.mainContainers {
+    box-shadow: 2px 5px .8em -6px;
+    width: 10em;
+    margin-bottom: 1em;
+}
+
+.mainContainers img {
+    width: 10em;
+}
+
+
+.flexContainer {
+    display: flex;
+    margin: 0 0 .5em .5em;
+    justify-content: space-between;
+}
+
+.flexContainer h4 {
+    font-size: medium;
+    color: #777777;
+}
+
+.bg-pink {
+    background-color: #f0a8bb;
+    padding: .2em;
+    margin: .4em;
+}
+
+.color-white{
+    color: white;
+}
+
+
+.flex {
+    display: flex;
+    font-size: x-small;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.flex li {
+    background-color: lightgrey;
+    padding: .1em .4em;
+    margin: .5em;
+    opacity: .6;
+}
+
+
+/* =================================footer ========================================== */
+
+footer {
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding-top: 1.5em;
+    background-color: #eeeeee;
+}
+
+.end div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.end img {
+    width: 10em;
+    margin: 0 auto;
+}
+
+.end h2 {
+    font-size: medium;
+    margin-bottom: .5em;
+    color: #92b2ba;
+}
+
+#color-pink{
+    color: #f0a8bb;
+}
+
+.end ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.end ul li {
+    font-size: x-small;
+    margin-bottom: .6em;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logos li {
+    margin-right: .8em;
+    color: #92b2ba;
+}
+
+hr {
+    opacity: .2;
+    display: none;
+}
+
+
+/* =========================== 768px and up =========================== */
+
+@media (min-width: 768px){
+    .container {
+        width: 83%;
+        margin: 1em auto;
+    }
+
+    .mainContainers {
+        width: 12em;
+    }
+    
+    .mainContainers img {
+        width: 12em;
+    }
+
+    .end img {
+        width: 5.5em;
+    }
+
+
+    nav {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        padding-top: .8em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 2.7em;
+    }
+
+    .headImg div {
+        right: 1.8em;
+        top: 8.2em;
+        padding: 0.2em .4em;
+    }
+
+    .headImg div h3 {
+        font-size: .8em;
+        font-weight: bolder;
+        color: #f0a8bb;
+    }
+
+    footer {
+        padding-bottom: 1.5em;
+    }
+
+    #end1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .end {
+        margin: auto;
+    }
+
+    .end h2{
+        padding-top: .7em;
+    }
+
+    .end ul li {
+        font-size: .4em;
+        text-align: left;
+        line-height: 3em;
+    }
+
+
+    #color-pink {
+        font-size: .5em;
+    }
+
+    #flower {
+        text-align: left;
+    }
+
+    hr {
+        display: block;
+    }
+}
+
+@media (min-width: 820px){
+    .mainContainers {
+        width: 15em;
+    }
+    
+    .mainContainers img {
+        width: 15em;
+    }
+}
+
+@media (min-width: 1024px){
+    .mainContainers {
+        width: 16.7em;
+    }
+    
+    .mainContainers img {
+        width: 16.7em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 2.7em;
+    }
+
+    .headImg div {
+        right: 1.8em;
+        top: 9.5em;
+        padding: 0.2em .4em;
+    }
+}
+
+@media (min-width: 1250px){
+    .mainContainers {
+        width: 18em;
+    }
+    
+    .mainContainers img {
+        width: 18em;
+    }
+
+    nav ul li {
+        font-size: 1em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 3em;
+    }
+
+    .headImg div {
+        right: 2em;
+        top: 11.5em;
+        padding: 0.2em .4em;
+    }
+
+    .headImg div h3 {
+        font-size: 1em;
+    }
+
+    .end h2 {
+        font-size: 1.2em;
+    }
+
+    .end ul li {
+        font-size: .5em;
+    }
+}
+
+@media (min-width: 1385px){
+
+    nav ul li {
+        font-size: 1.1em;
+    }
+
+    .mainContainers {
+        width: 20em;
+    }
+    
+    .mainContainers img {
+        width: 20em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 3.5em;
+    }
+
+    .headImg div {
+        right: 3em;
+        top: 13em;
+        padding: 0.2em .4em;
+    }
+
+    .headImg div h3 {
+        font-size: 1em;
+    }
+
+    .flexContainer h4 {
+        font-size: 1em;
+        padding-top: .4em;
+    }
+
+    #logos li {
+        font-size: 1em;
+    }
+
+    #color-pink {
+        font-size: .8em;
+    }
+
+}
+
+@media (min-width: 1535px){
+    .mainContainers {
+        width: 23em;
+    }
+    
+    .mainContainers img {
+        width: 23em;
+    }
+
+    nav {
+        padding-bottom: 3.8em;
+    }
+
+    nav ul li {
+        font-size: 1.3em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 5em;
+    }
+
+    .headImg div {
+        right: 3em;
+        top: 15.5em;
+        padding: 0.2em .4em;
+    }
+
+    .headImg div h3 {
+        font-size: 1.5em;
+    }
+
+    .flexContainer h4 {
+        font-size: 1.3em;
+    }
+
+    .flex li {
+        font-size: 1em;
+    }
+
+    #logos li {
+        font-size: 1.2em;
+    }
+
+    #color-pink {
+        font-size: 1em;
+    }
+
+    .end h2 {
+        font-size: 1.8em;
+    }
+
+    .end ul li {
+        font-size: .8em;
+        line-height: 1.3em;
+    }
+}
+
+@media (min-width: 1770px){
+    .mainContainers {
+        width: 29em;
+    }
+    
+    .mainContainers img {
+        width: 29em;
+    }
+
+    .headImg h1 {
+        right: .5em;
+        font-size: 5.5em;
+    }
+
+    .headImg div {
+        right: 4.5em;
+        top: 18.5em;
+        padding: 0.2em .4em;
+    }
+
+    .flexContainer h4 {
+        font-size: 1.7em;
+        padding-top: .1em;
+    }
+
+    .flex li {
+        font-size: 1.5em;
+    }
+}

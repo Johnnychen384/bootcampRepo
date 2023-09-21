@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pokedex
+        </title>
+        <%- include('./partials/head.ejs') %> 
+    </head>
+    <body style="width: 100vw" class="bg-dark">
+
+        <!-- NavBar -->
+        <%- include('./partials/nav.ejs') %> 
+
+        <main>
+            <!-- Top section that contains Image and pokemon name with type -->
+            <div class="card mb-3 mx-4 d-flex flex-column justify-content-center align-items-center">
+                <img class="card-img-top mt-2" src="<%= poke.img %>" alt="Card image cap" style="width: 18em;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= poke.name %> </h5>
+                    <p class="text-center"><%= poke.type[0] %> <%= poke.type[1] %> </p>
+                </div>
+            </div>
+
+            <!-- =================== Bottom Section ================================= -->
+            <!-- ==================================================================== -->
+            <div class="d-flex justify-content-around">
+                <!-- Section that holds stats related data -->
+                <div class="card list-unstyled p-3" style="width: 20%;">
+                    <div class="mx-auto">
+                        <h1>Stats</h1>
+                        <!-- stats list items -->
+                        <li class="mb-2">Hp: <%= poke.stats.hp %></li>
+                        <li class="mb-2">Attack: <%= poke.stats.attack %></li>
+                        <li class="mb-2">Defense: <%= poke.stats.defense %></li>
+                        <li class="mb-2">Sp.Attack: <%= poke.stats.spattack %></li>
+                        <li class="mb-2">Sp.Defense: <%= poke.stats.spdefense %></li>
+                        <li class="mb-2">Speed: <%= poke.stats.speed %></li>
+                    </div>
+                    
+                </div>
+
+                <!-- Middle div that simulates a pokemon wiki -->
+                <article class="card px-3" style="width: 50%;">
+                    <h1>Biology</h1>
+                    <hr />
+
+                    <h4 class="mt-2">Physiology</h3>
+                    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid quia, maiores minima maxime minus quisquam harum alias architecto. Nemo veniam dicta repellendus, eveniet cupiditate asperiores vero? Non, voluptas nihil Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur iste eligendi laboriosam aliquam perferendis repellat vel nesciunt harum voluptas at nisi voluptatum delectus dolorem quas, illo quod fugiat adipisci.</p>
+                    
+                    <h4 class="mt-4">Behavior</h3>
+                    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid quia, maiores minima maxime minus quisquam harum alias architecto. Nemo veniam dicta repellendus, eveniet cupiditate asperiores vero? Non, voluptas nihil Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur iste eligendi laboriosam aliquam perferendis repellat vel nesciunt harum voluptas at nisi voluptatum delectus dolorem quas, illo quod fugiat adipisci.</p>
+                    
+                    <h4 class="mt-4">Natural abilities</h3>
+                    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid quia, maiores minima maxime minus quisquam harum alias architecto. Nemo veniam dicta repellendus, eveniet cupiditate asperiores vero? Non, voluptas nihil Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur iste eligendi laboriosam aliquam perferendis repellat vel nesciunt harum voluptas at nisi voluptatum delectus dolorem quas, illo quod fugiat adipisci.</p>
+                    
+                </article>
+                <!-- div that holds all damage related data -->
+                <div class="card list-unstyled p-3" style="width: 20%;">
+                    <div class="mx-auto">
+                        <h1>Damages</h1>
+
+                        <!-- Each damage data -->
+                        <li class="mb-2">Normal: <%= poke.damages.normal %> </li>
+                        <li class="mb-2">Fire: <%= poke.damages.fire %></li>
+                        <li class="mb-2">Water: <%= poke.damages.water %></li>
+                        <li class="mb-2">Electric: <%= poke.damages.electric %></li>
+                        <li class="mb-2">Grass: <%= poke.damages.grass %></li>
+                        <li class="mb-2">Ice: <%= poke.damages.ice %></li>
+                        <li class="mb-2">Fight: <%= poke.damages.fight %></li>
+                        <li class="mb-2">Poison: <%= poke.damages.poison %></li>
+                        <li class="mb-2">Ground: <%= poke.damages.ground %></li>
+                        <li class="mb-2">Flying: <%= poke.damages.flying %></li>
+                        <li class="mb-2">Psychic: <%= poke.damages.psychic %></li>
+                        <li class="mb-2">Bug: <%= poke.damages.bug %></li>
+                        <li class="mb-2">Rock: <%= poke.damages.rock %></li>
+                        <li class="mb-2">Ghost: <%= poke.damages.ghost %></li>
+                        <li class="mb-2">Dragon: <%= poke.damages.dragon %></li>
+                        <li class="mb-2">Dark: <%= poke.damages.dark %></li>
+                        <li class="mb-2">Steel: <%= poke.damages.steel %></li>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- footer -->
+        <%- include('./partials/footer.ejs') %> 
+    </body>
+</html>

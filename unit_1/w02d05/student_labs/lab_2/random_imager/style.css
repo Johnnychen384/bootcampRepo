@@ -1,0 +1,14 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    margin-top: 1em;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin-left: 1em;
+}
